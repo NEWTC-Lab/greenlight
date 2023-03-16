@@ -29,12 +29,12 @@
     <% end %>
 
     <title><%= yield(:page_title).present? ? yield(:page_title) : t("bigbluebutton") %></title>
-    <meta property="og:title" content="<%= yield(:page_title).present? ? yield(:page_title) : t("bigbluebutton") %>" />
+    <meta property="og:title" content="prmeet - Prayer's meeting" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content=<%=user_locale(@room&.owner)%> />
-    <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "Greenlight", locale: :en) %>" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:description" content="prmeet는 'prayer's meeting'즉, '기도하는 자들의 모임' 이라는 뜻 입니다. 온라인 미팅을 필요로 하는 '교회 소모임'이나 대형모임을 생각하여 개발되었습니다. 하지만, '개인 미팅', '회사 회의', '소모임', '동호회 모임', '학교에서의 교육', '반상회'등 다양한 모임에서도 활용 가능하여, 현재 무료로 운용되고 있으니, 많이 사용해 주시길 바랍니다.혹시, 보완할 점이나 아이디어, 요청사항을리 있으신 분은 언제는 주저하지 마시고 다음 이메일이나 게시판에 질문하여 주세요. newtc@newtc.co.kr" />
     <meta property="og:url" content="<%= request.base_url %>" />
-    <meta property="og:image" content="<%= logo_image %>" />
+    <meta property="og:image" content="<%= request.base_url %>/logo_with_text.png" />
     <meta name="viewport" content= "width=device-width, user-scalable=no">
     <%= csrf_meta_tags %>
 
@@ -64,17 +64,6 @@
     <%= render "shared/header" %>
 
     <div class="wrapper">
-      <% if bigbluebutton_endpoint_default? %>
-        <div class="alert alert-icon alert-danger text-center mb-0">
-          <div class="flash alert d-inline">
-            <i class="fas fa-exclamation-triangle"></i>
-            <p class="d-inline"><%= t("test_install",
-              href: link_to(t("docs").downcase, "http://docs.bigbluebutton.org/install/greenlight-v2.html#2-install-greenlight", target: "_blank", rel: "noopener")
-            ).html_safe %>
-          </div>
-        </div>
-      <% end %>
-
       <% unless Rails.configuration.banner_message.blank? %>
         <div class="alert alert-icon alert-danger text-center mb-0">
           <div class="flash alert d-inline">
