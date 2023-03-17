@@ -115,16 +115,15 @@ class ApplicationController < ActionController::Base
 
   # Determines proper locale to be used by calling user_locale with params based on if room owner exists
   def determine_locale(user)
-    if user && user.language != 'default'
-      user.language
-    else
-      Rails.configuration.default_locale.presence || http_accept_language.language_region_compatible_from(I18n.available_locales)
-    end
+    # if user && user.language != 'default'
+    #   user.language
+    # else
+    #   Rails.configuration.default_locale.presence || http_accept_language.language_region_compatible_from(I18n.available_locales)
+    # end
 
     params['locale']
-    if params['locale'] == ""
-      "ko_KR"
-    end
+    'ko_KR' if params['locale'] == nil
+
   end
 
   # Sets the appropriate locale.

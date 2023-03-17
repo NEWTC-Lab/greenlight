@@ -336,7 +336,7 @@ en:
     search:
       start: Start searching...
   landing:
-    about: "%{href} is a simple front-end for your prmeet open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
+    about: "prmeet means \"prayer's meeting\", that is, \"a meeting of those who pray\". <br> It was developed considering \"church gatherings\" or large gatherings that require online meetings. However, it can be used for various gatherings such as \"personal meeting\", \"company meeting\", \"small gathering\", \"club meeting\", \"education at school\", \"neighborhood association\" , It is currently being operated for free, so please use it a lot.<br> If you have any points to supplement, ideas, or requests, please do not hesitate to ask questions at the email address below. <br>newtc@newtc.co.kr"
     welcome: Welcome to prmeet.
     video: Watch our tutorial on using Greenlight
     upgrade: Show me how to upgrade to 2.0!
