@@ -121,8 +121,14 @@ class ApplicationController < ActionController::Base
     #   Rails.configuration.default_locale.presence || http_accept_language.language_region_compatible_from(I18n.available_locales)
     # end
 
-    params['locale']
-    'ko_KR' if params['locale'] == nil
+    
+    
+    if params['locale'] == nil
+      'ko_KR'
+    else
+      params['locale']
+    end
+
 
   end
 
