@@ -121,14 +121,19 @@ class ApplicationController < ActionController::Base
     #   Rails.configuration.default_locale.presence || http_accept_language.language_region_compatible_from(I18n.available_locales)
     # end
 
+    if params['locale'] != nil
+      session[:locale] = params["locale"]
+    end
     
-    
-    if params['locale'] == nil
-      'ko_KR'
-    else
-      params['locale']
+    if session[:locale] == nil
+      if user && user.language != 'default'
+        session[:locale] = user.language
+      else 
+        session[:locale] = 'ko_KR'
+      end
     end
 
+    session[:locale]
 
   end
 

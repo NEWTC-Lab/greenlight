@@ -25,6 +25,46 @@
       <% end %>
 
       <div class="d-flex ml-auto">
+
+
+
+
+        <div class="dropdown">
+          <a href="#" class="nav-link pr-0" data-toggle="dropdown">
+            <span style="width: 2rem; height: 2rem; display: inline-block; vertical-align: bottom;"></span>
+            <span class="ml-2 d-none d-lg-block">
+              <%
+                locale_arr = Array.new
+                locale_arr.push Hash['locale' => 'en', 'name' => 'English']
+                locale_arr.push Hash['locale' => 'ko_KR', 'name' => '한국어']
+                locale_arr.push Hash['locale' => 'ja_JP', 'name' => '日本語']
+
+                for locale in locale_arr
+                  if locale['locale'] == session[:locale]
+                    locale_name = locale['name']
+                    break
+                  end
+                end
+
+              %>
+              <span class="text-default username"><%= 'languege : ' %><%= locale_name %></span>
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end">
+            <% for locale in locale_arr %>
+              <button class="dropdown-item" onclick="location.href='?locale=<%= locale['locale'] %>'">
+                <%= locale['name'] %>
+              </button>
+            <% end %>
+
+          </div>
+        </div>
+
+
+
+
+
+
         <% if current_user %>
 
           <%= link_to home_page, class: "px-3 mx-1 mt-1 header-nav #{active_home}" do %>

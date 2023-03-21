@@ -38,7 +38,7 @@
               </div>
             </div>
           <% end %>
-          <%= form_for(:session, url: create_session_path) do |f| %>
+          <%= form_for(:session, url: create_session_path + '?locale=' + session['locale'] ) do |f| %>
             <div class="form-group">
               <div class="input-icon">
                 <span class="input-icon-addon">
