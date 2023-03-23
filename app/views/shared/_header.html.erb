@@ -38,6 +38,7 @@
                 locale_arr.push Hash['locale' => 'en', 'name' => 'English']
                 locale_arr.push Hash['locale' => 'ko_KR', 'name' => '한국어']
                 locale_arr.push Hash['locale' => 'ja_JP', 'name' => '日本語']
+                locale_arr.push Hash['locale' => 'tr_TR', 'name' => 'Türkçe']
 
                 for locale in locale_arr
                   if locale['locale'] == session[:locale]
@@ -47,7 +48,9 @@
                 end
 
               %>
-              <span class="text-default username"><%= 'languege : ' %><%= locale_name %></span>
+              <span class="text-default username"><%= 'language : ' %> <span style="width:0px; height:0px; border-top: black 8px solid;
+              border-left: transparent 5px solid; border-right: transparent 5px solid;
+              display: inline-block; margin: 0px 4px;"></span> <%= locale_name %></span>
             </span>
           </a>
           <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end">
