@@ -25,4 +25,8 @@ class MainController < ApplicationController
 
     redirect_to home_page if current_user
   end
+
+  def help_page
+    render "help/help"
+  end
 end

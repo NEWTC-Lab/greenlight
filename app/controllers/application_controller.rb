@@ -347,4 +347,6 @@ class ApplicationController < ActionController::Base
     @user_domain = "greenlight"
     @settings = Setting.find_or_create_by(provider: @user_domain)
   end
+
+
 end
