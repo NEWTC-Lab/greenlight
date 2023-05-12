@@ -2,9 +2,6 @@
         .delimiter_line{width: 100%; margin-top: 20px; border-top: 2px rgb(150, 150, 150) solid;}
         .center{text-align: center;}
 
-        h2 {
-            margin: 10px;
-        }
 
         img{text-align: center; width: 720px;}
         a{text-decoration: none}
@@ -13,339 +10,337 @@
         a:visited{color: black}
     </style>
 
-<div style="padding: 50px 0px;">
-    <div>
-        <h1><%= t("manual.title") %></h1>
+<div>
+    <h1><%= t("manual.title").html_safe %></h1>
+</div>
+
+<div class="delimiter_line"></div>
+
+<div>
+    <h2 id="list"><%= t("manual.list").html_safe %></h2>
+    <div style="width: 300px; height: auto; border: 1px solid black;">
+        <ol>
+            <li><a href="#manual_login"><%= t("manual.manual_login").html_safe %></a></li>
+            <li><a href="#manual_account_registration"><%= t("manual.manual_account_registration").html_safe %></a></li>
+            <li><a href="#manual_main_page"><%= t("manual.manual_main_page").html_safe %></a></li>
+            <li><a href="#manual_session_page"><%= t("manual.manual_session_page").html_safe %></a></li>
+            <li><a href="#manual_session_page_using_microphone"><%= t("manual.manual_session_page_using_microphone").html_safe %></a></li>
+            <li><a href="#manual_session_page_using_webcam"><%= t("manual.manual_session_page_using_webcam").html_safe %></a></li>
+            <li><a href="#manual_session_page_manager_function"><%= t("manual.manual_session_page_manager_function").html_safe %></a></li>
+            <li><a href="#manual_session_page_annotation_tool"><%= t("manual.manual_session_page_annotation_tool").html_safe %></a></li>
+            <li><a href="#manual_session_page_public_chat"><%= t("manual.manual_session_page_public_chat").html_safe %></a></li>
+            <li><a href="#manual_session_page_shared_notes"><%= t("manual.manual_session_page_shared_notes").html_safe %></a></li>
+            <li><a href="#manual_session_page_raise_hand"><%= t("manual.manual_session_page_raise_hand").html_safe %></a></li>
+            <li><a href="#manual_session_page_screen_sharing"><%= t("manual.manual_session_page_screen_sharing").html_safe %></a></li>
+            <li><a href="#manual_session_page_presentation_management1"><%= t("manual.manual_session_page_presentation_management1").html_safe %></a></li>
+            <li><a href="#manual_session_page_presentation_management2"><%= t("manual.manual_session_page_presentation_management2").html_safe %></a></li>
+            <li><a href="#manual_session_page_surbey"><%= t("manual.manual_session_page_surbey").html_safe %></a></li>
+            <li><a href="#manual_session_page_user_management"><%= t("manual.manual_session_page_user_management").html_safe %></a></li>
+            <li><a href="#manual_session_page_small_group"><%= t("manual.manual_session_page_small group").html_safe %></a></li>
+            <li><a href="#manual_session_page_closed_subtitle"><%= t("manual.manual_session_page_closed_subtitle").html_safe %></a></li>
+            <li><a href="#manual_session_page_learning_analysis_dashboard"><%= t("manual.manual_session_page_learning_analysis_dashboard").html_safe %></a></li>
+            <li><a href="#manual_session_page_end_session"><%= t("manual.manual_session_page_end_session").html_safe %></a></li>
+            <li><a href="#q&a"><%= t("manual.q&a").html_safe %></a></li>
+        </ol>
     </div>
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div>
-        <h2 id="list"><%= t("manual.list") %></h2>
-        <div style="width: 300px; height: auto; border: 1px solid black; margin: 0px 50px;">
-            <ol>
-                <li><a href="#manual_login"><%= t("manual.manual_login") %></a></li>
-                <li><a href="#manual_account_registration"><%= t("manual.manual_account_registration") %></a></li>
-                <li><a href="#manual_main_page"><%= t("manual.manual_main_page") %></a></li>
-                <li><a href="#manual_session_page"><%= t("manual.manual_session_page") %></a></li>
-                <li><a href="#manual_session_page_using_microphone"><%= t("manual.manual_session_page_using_microphone1") %></a></li>
-                <li><a href="#manual_session_page_using_webcam"><%= t("manual.manual_session_page_using_webcam") %></a></li>
-                <li><a href="#manual_session_page_manager_function"><%= t("manual.manual_session_page_manager_function") %></a></li>
-                <li><a href="#manual_session_page_annotation_tool"><%= t("manual.manual_session_page_annotation_tool") %></a></li>
-                <li><a href="#manual_session_page_public_chat"><%= t("manual.manual_session_page_public_chat") %></a></li>
-                <li><a href="#manual_session_page_shared_notes"><%= t("manual.manual_session_page_shared_notes") %></a></li>
-                <li><a href="#manual_session_page_raise_hand"><%= t("manual.manual_session_page_raise_hand") %></a></li>
-                <li><a href="#manual_session_page_screen_sharing"><%= t("manual.manual_session_page_screen_sharing") %></a></li>
-                <li><a href="#manual_session_page_presentation_management1"><%= t("manual.manual_session_page_presentation_management1") %></a></li>
-                <li><a href="#manual_session_page_presentation_management2"><%= t("manual.manual_session_page_presentation_management2") %></a></li>
-                <li><a href="#manual_session_page_surbey"><%= t("manual.manual_session_page_surbey") %></a></li>
-                <li><a href="#manual_session_page_user_management"><%= t("manual.manual_session_page_user_management") %></a></li>
-                <li><a href="#manual_session_page_small group"><%= t("manual.manual_session_page_small group") %></a></li>
-                <li><a href="#manual_session_page_closed_subtitle"><%= t("manual.manual_session_page_closed_subtitle") %></a></li>
-                <li><a href="#manual_session_page_learning_analysis_dashboard"><%= t("manual.manual_session_page_learning_analysis_dashboard") %></a></li>
-                <li><a href="#manual_session_page_end_session"><%= t("manual.manual_session_page_end_session") %></a></li>
-                <li><a href="#q&a"><%= t("manual.q&a") %></a></li>
-            </ol>
-        </div>
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_login"><%= t("manual.manual_login1").html_safe %></h2></a>
+    <p><%= t("manual.manual_login2").html_safe %><br>
+        <%= t("manual.manual_login3").html_safe %>
+    </p>
+    <img src="/img/manual_login.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_login"><%= t("manual.manual_login1") %></h2></a>
-        <p><%= t("manual.manual_login2") %><br>
-            <%= t("manual.manual_login3") %>
-        </p>
-        <img src="/img/manual_login.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_account_registration"><%= t("manual.manual_account_registration1").html_safe %></h2></a>
+    <p><%= t("manual.manual_account_registration2").html_safe %></p>
+    <img src="/img/manual_account_registration.png">
+    <p><%= t("manual.manual_account_registration3").html_safe %></p>
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_account_registration"><%= t("manual.manual_account_registration1") %></h2></a>
-        <p><%= t("manual.manual_account_registration2") %></p>
-        <img src="/img/manual_account_registration.png">
-        <p><%= t("manual.manual_account_registration3") %></p>
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_main_page"><%= t("manual.manual_main_page1").html_safe %></h2></a>
+    <p>
+        <%= t("manual.manual_main_page2").html_safe %><br>
+        <%= t("manual.manual_main_page3").html_safe %><br>
+        <%= t("manual.manual_main_page4").html_safe %><br>
+        <%= t("manual.manual_main_page5").html_safe %>
+    </p>
+    <img src="/img/manual_main_page.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_main_page"><%= t("manual.manual_main_page1") %></h2></a>
-        <p>
-            <%= t("manual.manual_main_page2") %><br>
-            <%= t("manual.manual_main_page3") %><br>
-            <%= t("manual.manual_main_page4") %><br>
-            <%= t("manual.manual_main_page5") %>
-        </p>
-        <img src="/img/manual_main_page.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page"><%= t("manual.manual_session_page1").html_safe %></h2></a>
+    <p>
+        <%= t("manual.manual_session_page2").html_safe %><br>
+        <%= t("manual.manual_session_page3").html_safe %><br>
+        <%= t("manual.manual_session_page4").html_safe %><br>
+        <%= t("manual.manual_session_page5").html_safe %><br>
+        <%= t("manual.manual_session_page6").html_safe %><br>
+        <%= t("manual.manual_session_page7").html_safe %>
+    </p>
+    <img src="/img/manual_session_page.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page"><%= t("manual.manual_session_page1") %></h2></a>
-        <p>
-            <%= t("manual.manual_session_page2") %><br>
-            <%= t("manual.manual_session_page3") %><br>
-            <%= t("manual.manual_session_page4") %><br>
-            <%= t("manual.manual_session_page5") %><br>
-            <%= t("manual.manual_session_page6") %><br>
-            <%= t("manual.manual_session_page7") %>
-        </p>
-        <img src="/img/manual_session_page.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_using_microphone"><%= t("manual.manual_session_page_using_microphone1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_using_microphone2").html_safe %></p>
+    <img src="/img/manual_session_page_using_microphone1.png">
+    <p><%= t("manual.manual_session_page_using_microphone3").html_safe %></p>
+    <img src="/img/manual_session_page_using_microphone2.png">
+    <p><%= t("manual.manual_session_page_using_microphone4").html_safe %></p>
+    <img src="/img/manual_session_page_using_microphone3.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_using_microphone"><%= t("manual.manual_session_page_using_microphone1") %></h2></a>
-        <p><%= t("manual.manual_session_page_using_microphone2") %></p>
-        <img src="/img/manual_session_page_using_microphone1.png">
-        <p><%= t("manual.manual_session_page_using_microphone3") %></p>
-        <img src="/img/manual_session_page_using_microphone2.png">
-        <p><%= t("manual.manual_session_page_using_microphone4") %></p>
-        <img src="/img/manual_session_page_using_microphone3.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_using_webcam"><%= t("manual.manual_session_page_using_webcam1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_using_webcam2").html_safe %></p>
+    <img src="/img/manual_session_page_using_webcam1.png">
+    <p><%= t("manual.manual_session_page_using_webcam3").html_safe %></p>
+    <img src="/img/manual_session_page_using_webcam2.png">
+    <p><%= t("manual.manual_session_page_using_webcam4").html_safe %></p>
+    <img src="/img/manual_session_page_using_webcam3.png">
+    <p><%= t("manual.manual_session_page_using_webcam5").html_safe %></p>
+    <img src="/img/manual_session_page_using_webcam(multi)1.png">
+    <p><%= t("manual.manual_session_page_using_webcam6").html_safe %></p>
+    <img src="/img/manual_session_page_using_webcam(multi)2.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_using_webcam"><%= t("manual.manual_session_page_using_webcam1") %></h2></a>
-        <p><%= t("manual.manual_session_page_using_webcam2") %></p>
-        <img src="/img/manual_session_page_using_webcam1.png">
-        <p><%= t("manual.manual_session_page_using_webcam3") %></p>
-        <img src="/img/manual_session_page_using_webcam2.png">
-        <p><%= t("manual.manual_session_page_using_webcam4") %></p>
-        <img src="/img/manual_session_page_using_webcam3.png">
-        <p><%= t("manual.manual_session_page_using_webcam5") %></p>
-        <img src="/img/manual_session_page_using_webcam(multi)1.png">
-        <p><%= t("manual.manual_session_page_using_webcam6") %></p>
-        <img src="/img/manual_session_page_using_webcam(multi)2.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_manager_function"><%= t("manual.manual_session_page_manager_function1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_manager_function2").html_safe %></p>
+    <p>
+        <%= t("manual.manual_session_page_manager_function3").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function4").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function5").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function6").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function7").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function8").html_safe %><br>
+        <%= t("manual.manual_session_page_manager_function9").html_safe %>
+    </p>
+    <p><%= t("manual.manual_session_page_manager_function10").html_safe %></p>
+    <img src="/img/manual_session_page_manager_function.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_manager_function"><%= t("manual.manual_session_page_manager_function1") %></h2></a>
-        <p><%= t("manual.manual_session_page_manager_function2") %></p>
-        <p>
-            <%= t("manual.manual_session_page_manager_function3") %><br>
-            <%= t("manual.manual_session_page_manager_function4") %><br>
-            <%= t("manual.manual_session_page_manager_function5") %><br>
-            <%= t("manual.manual_session_page_manager_function6") %><br>
-            <%= t("manual.manual_session_page_manager_function7") %><br>
-            <%= t("manual.manual_session_page_manager_function8") %><br>
-            <%= t("manual.manual_session_page_manager_function9") %>
-        </p>
-        <p><%= t("manual.manual_session_page_manager_function10") %></p>
-        <img src="/img/manual_session_page_manager_function.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_annotation_tool"><%= t("manual.manual_session_page_annotation_tool1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_annotation_tool2").html_safe %></p>
+    <img src="/img/manual_session_page_annotation_tool.png">
+    <p><%= t("manual.manual_session_page_annotation_tool3").html_safe %></p>
+    <br>
+    <p><%= t("manual.manual_session_page_annotation_tool4").html_safe %><br><%= t("manual.manual_session_page_annotation_tool5").html_safe %></p>
+    <img src="/img/manual_session_page_annotation_tool2.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_annotation_tool"><%= t("manual.manual_session_page_annotation_tool1") %></h2></a>
-        <p><%= t("manual.manual_session_page_annotation_tool2") %></p>
-        <img src="/img/manual_session_page_annotation_tool.png">
-        <p><%= t("manual.manual_session_page_annotation_tool3") %></p>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_public_chat"><%= t("manual.manual_session_page_public_chat1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_public_chat2").html_safe %></p>
+    <img src="/img/manual_session_page_public_chat.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_shared_notes"><%= t("manual.manual_session_page_shared_notes1").html_safe %></h2></a>
+    <p>
+        <%= t("manual.manual_session_page_shared_notes2").html_safe %><br>
+        <%= t("manual.manual_session_page_shared_notes3").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_shared_notes.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_raise_hand"><%= t("manual.manual_session_page_raise_hand1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_raise_hand2").html_safe %></p>
+    <img src="/img/manual_session_page_raise_hand.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_screen_sharing"><%= t("manual.manual_session_page_screen_sharing1").html_safe %></h2></a>
+    <p>
+        <%= t("manual.manual_session_page_screen_sharing2").html_safe %><br>
+        <%= t("manual.manual_session_page_screen_sharing3").html_safe %><br>
+        <%= t("manual.manual_session_page_screen_sharing4").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_screen_sharing1.png">
+    <p><%= t("manual.manual_session_page_screen_sharing5").html_safe %></p>
+    <img src="/img/manual_session_page_screen_sharing2.png">
+    <p><%= t("manual.manual_session_page_screen_sharing6").html_safe %><br><%= t("manual.manual_session_page_screen_sharing7").html_safe %></p>
+    <img src="/img/manual_session_page_screen_sharing3.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_presentation_management1"><%= t("manual.manual_session_page_presentation_management1-1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_presentation_management1-2").html_safe %></p>
+    <br>
+    <p>
+        <%= t("manual.manual_session_page_presentation_management1-3").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management1-4").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management1-5").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management1-6").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_presentation_management.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_presentation_management2"><%= t("manual.manual_session_page_presentation_management2-1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_presentation_management2-2").html_safe %></p>
+    <br>
+    <p><%= t("manual.manual_session_page_presentation_management2-3").html_safe %></p>
+    <p>
+        <%= t("manual.manual_session_page_presentation_management2-4").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-5").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-6").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-7").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-8").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-9").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-10").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_presentation_management1.png">
+    <p><%= t("manual.manual_session_page_presentation_management2-11").html_safe %></p>
+    <br>
+    <p><%= t("manual.manual_session_page_presentation_management2-12").html_safe %></p>
+    <p>
+        <%= t("manual.manual_session_page_presentation_management2-13").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-14").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-15").html_safe %><br>
+        <%= t("manual.manual_session_page_presentation_management2-16").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_presentation_management2.png">
+    <p><%= t("manual.manual_session_page_presentation_management2-17").html_safe %></p>
+    <img src="/img/manual_session_page_presentation_management3.png">
+    <p><%= t("manual.manual_session_page_presentation_management2-18").html_safe %></p>
+    <img src="/img/manual_session_page_presentation_management4.png">
+    <p><%= t("manual.manual_session_page_presentation_management2-19").html_safe %></p>
+    <img src="/img/manual_session_page_presentation_management5.png">
+</div>
+
+<div class="delimiter_line"></div>
+
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_surbey"><%= t("manual.manual_session_page_surbey1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_surbey2").html_safe %></p>
+    <img src="/img/manual_session_page_surbey1.png">
+    <p>
+        <%= t("manual.manual_session_page_surbey3").html_safe %>
         <br>
-        <p><%= t("manual.manual_session_page_annotation_tool4") %><br><%= t("manual.manual_session_page_annotation_tool5") %></p>
-        <img src="/img/manual_session_page_annotation_tool2.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_public_chat"><%= t("manual.manual_session_page_public_chat1") %></h2></a>
-        <p><%= t("manual.manual_session_page_public_chat2") %></p>
-        <img src="/img/manual_session_page_public_chat.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_shared_notes"><%= t("manual.manual_session_page_shared_notes1") %></h2></a>
-        <p>
-            <%= t("manual.manual_session_page_shared_notes2") %><br>
-            <%= t("manual.manual_session_page_shared_notes3") %>
-        </p>
-        <img src="/img/manual_session_page_shared_notes.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_raise_hand"><%= t("manual.manual_session_page_raise_hand1") %></h2></a>
-        <p><%= t("manual.manual_session_page_raise_hand2") %></p>
-        <img src="/img/manual_session_page_raise_hand.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_screen_sharing"><%= t("manual.manual_session_page_screen_sharing1") %></h2></a>
-        <p>
-            <%= t("manual.manual_session_page_screen_sharing2") %><br>
-            <%= t("manual.manual_session_page_screen_sharing3") %><br>
-            <%= t("manual.manual_session_page_screen_sharing4") %>
-        </p>
-        <img src="/img/manual_session_page_screen_sharing1.png">
-        <p><%= t("manual.manual_session_page_screen_sharing5") %></p>
-        <img src="/img/manual_session_page_screen_sharing2.png">
-        <p><%= t("manual.manual_session_page_screen_sharing6") %><br><%= t("manual.manual_session_page_screen_sharing7") %></p>
-        <img src="/img/manual_session_page_screen_sharing3.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_presentation_management1"><%= t("manual.manual_session_page_presentation_management1-1") %></h2></a>
-        <p><%= t("manual.manual_session_page_presentation_management1-2") %></p>
+        <%= t("manual.manual_session_page_surbey4").html_safe %>
         <br>
-        <p>
-            <%= t("manual.manual_session_page_presentation_management1-3") %><br>
-            <%= t("manual.manual_session_page_presentation_management1-4") %><br>
-            <%= t("manual.manual_session_page_presentation_management1-5") %><br>
-            <%= t("manual.manual_session_page_presentation_management1-6") %>
-        </p>
-        <img src="/img/manual_session_page_presentation_management.png">
-    </div>
+        <%= t("manual.manual_session_page_surbey5").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_surbey2.png">
+    <p><%= t("manual.manual_session_page_surbey6").html_safe %></p>
+    <img src="/img/manual_session_page_surbey3.png">
+    <p><%= t("manual.manual_session_page_surbey7").html_safe %></p>
+    <img src="/img/manual_session_page_surbey4.png">
+    <p><%= t("manual.manual_session_page_surbey8").html_safe %></p>
+    <img src="/img/manual_session_page_surbey5.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_presentation_management2"><%= t("manual.manual_session_page_presentation_management2-1") %></h2></a>
-        <p><%= t("manual.manual_session_page_presentation_management2-2") %></p>
-        <br>
-        <p><%= t("manual.manual_session_page_presentation_management2-3") %></p>
-        <p>
-            <%= t("manual.manual_session_page_presentation_management2-4") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-5") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-6") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-7") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-8") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-9") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-10") %>
-        </p>
-        <img src="/img/manual_session_page_presentation_management1.png">
-        <p><%= t("manual.manual_session_page_presentation_management2-11") %></p>
-        <br>
-        <p><%= t("manual.manual_session_page_presentation_management2-12") %></p>
-        <p>
-            <%= t("manual.manual_session_page_presentation_management2-13") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-14") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-15") %><br>
-            <%= t("manual.manual_session_page_presentation_management2-16") %>
-        </p>
-        <img src="/img/manual_session_page_presentation_management2.png">
-        <p><%= t("manual.manual_session_page_presentation_management2-17") %></p>
-        <img src="/img/manual_session_page_presentation_management3.png">
-        <p><%= t("manual.manual_session_page_presentation_management2-18") %></p>
-        <img src="/img/manual_session_page_presentation_management4.png">
-        <p><%= t("manual.manual_session_page_presentation_management2-19") %></p>
-        <img src="/img/manual_session_page_presentation_management5.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_user_management"><%= t("manual.manual_session_page_user_management1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_user_management2").html_safe %></p>
+    <img src="/img/manual_session_page_user_management.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_surbey"><%= t("manual.manual_session_page_surbey1") %></h2></a>
-        <p><%= t("manual.manual_session_page_surbey2") %></p>
-        <img src="/img/manual_session_page_surbey1.png">
-        <p>
-            <%= t("manual.manual_session_page_surbey3") %>
-            <br>
-            <%= t("manual.manual_session_page_surbey4") %>
-            <br>
-            <%= t("manual.manual_session_page_surbey5") %>
-        </p>
-        <img src="/img/manual_session_page_surbey2.png">
-        <p><%= t("manual.manual_session_page_surbey6") %></p>
-        <img src="/img/manual_session_page_surbey3.png">
-        <p><%= t("manual.manual_session_page_surbey7") %></p>
-        <img src="/img/manual_session_page_surbey4.png">
-        <p><%= t("manual.manual_session_page_surbey8") %></p>
-        <img src="/img/manual_session_page_surbey5.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_small_group"><%= t("manual.manual_session_page_small group1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_small group2").html_safe %></p>
+    <p><%= t("manual.manual_session_page_small group3").html_safe %></p>
+    <img src="/img/manual_session_page_small group1.png">
+    <p><%= t("manual.manual_session_page_small group4").html_safe %></p>
+    <img src="/img/manual_session_page_small group2.png">
+    <p><%= t("manual.manual_session_page_small group5").html_safe %></p>
+    <p><%= t("manual.manual_session_page_small group6").html_safe %></p>
+    <img src="/img/manual_session_page_small group3.png">
+    <p>
+        <%= t("manual.manual_session_page_small group7").html_safe %><br>
+        <%= t("manual.manual_session_page_small group8").html_safe %><br>
+        <%= t("manual.manual_session_page_small group9").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_small group4.png">
+    <p><%= t("manual.manual_session_page_small group10").html_safe %></p>
+    <p><%= t("manual.manual_session_page_small group11").html_safe %></p>
+    <img src="/img/manual_session_page_small group5.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_user_management"><%= t("manual.manual_session_page_user_management1") %></h2></a>
-        <p><%= t("manual.manual_session_page_user_management2") %></p>
-        <img src="/img/manual_session_page_user_management.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_closed_subtitle">세<%= t("manual.manual_session_page_closed_subtitle1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_closed_subtitle2").html_safe %></p>
+    <p><%= t("manual.manual_session_page_closed_subtitle3").html_safe %></p>
+    <img src="/img/manual_session_page_closed_subtitle1.png">
+    <p><%= t("manual.manual_session_page_closed_subtitle4").html_safe %></p>
+    <img src="/img/manual_session_page_closed_subtitle2.png">
+    <p><%= t("manual.manual_session_page_closed_subtitle5").html_safe %></p>
+    <img src="/img/manual_session_page_closed_subtitle3.png">
+    <p><%= t("manual.manual_session_page_closed_subtitle6").html_safe %></p>
+    <img src="/img/manual_session_page_closed_subtitle4.png">
+    <p><%= t("manual.manual_session_page_closed_subtitle7").html_safe %></p>
+    <img src="/img/manual_session_page_closed_subtitle5.png">
+    <img src="/img/manual_session_page_closed_subtitle6.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_small group"><%= t("manual.manual_session_page_small group1") %></h2></a>
-        <p><%= t("manual.manual_session_page_small group2") %></p>
-        <p><%= t("manual.manual_session_page_small group3") %></p>
-        <img src="/img/manual_session_page_small group1.png">
-        <p><%= t("manual.manual_session_page_small group4") %></p>
-        <img src="/img/manual_session_page_small group2.png">
-        <p><%= t("manual.manual_session_page_small group5") %></p>
-        <p><%= t("manual.manual_session_page_small group6") %></p>
-        <img src="/img/manual_session_page_small group3.png">
-        <p>
-            <%= t("manual.manual_session_page_small group7") %><br>
-            <%= t("manual.manual_session_page_small group8") %><br>
-            <%= t("manual.manual_session_page_small group9") %>
-        </p>
-        <img src="/img/manual_session_page_small group4.png">
-        <p><%= t("manual.manual_session_page_small group10") %></p>
-        <p><%= t("manual.manual_session_page_small group11") %></p>
-        <img src="/img/manual_session_page_small group5.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_learning_analysis_dashboard"><%= t("manual.").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_learning_analysis_dashboard2").html_safe %></p>
+    <p>
+        <%= t("manual.manual_session_page_learning_analysis_dashboard3").html_safe %><br>
+        <%= t("manual.manual_session_page_learning_analysis_dashboard4").html_safe %><br>
+        <%= t("manual.manual_session_page_learning_analysis_dashboard5").html_safe %>
+    </p>
+    <img src="/img/manual_session_page_learning_analysis_dashboard.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_closed_subtitle">세<%= t("manual.manual_session_page_closed_subtitle1") %></h2></a>
-        <p><%= t("manual.manual_session_page_closed_subtitle2") %></p>
-        <p><%= t("manual.manual_session_page_closed_subtitle3") %></p>
-        <img src="/img/manual_session_page_closed_subtitle1.png">
-        <p><%= t("manual.manual_session_page_closed_subtitle4") %></p>
-        <img src="/img/manual_session_page_closed_subtitle2.png">
-        <p><%= t("manual.manual_session_page_closed_subtitle5") %></p>
-        <img src="/img/manual_session_page_closed_subtitle3.png">
-        <p><%= t("manual.manual_session_page_closed_subtitle6") %></p>
-        <img src="/img/manual_session_page_closed_subtitle4.png">
-        <p><%= t("manual.manual_session_page_closed_subtitle7") %></p>
-        <img src="/img/manual_session_page_closed_subtitle5.png">
-        <img src="/img/manual_session_page_closed_subtitle6.png">
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="manual_session_page_end_session"><%= t("manual.manual_session_page_learnimanual_session_page_end_session1ng_analysis_dashboard1").html_safe %></h2></a>
+    <p><%= t("manual.manual_session_page_learning_analysis_dashboard2").html_safe %></p>
+    <img src="/img/mamanual_session_page_learningnual_session_page_end_session1.png">
+    <p><%= t("manual_session_page_end_session3").html_safe %></p>
+    <img src="/img/manual_session_page_end_session2.png">
+</div>
 
-    <div class="delimiter_line"></div>
+<div class="delimiter_line"></div>
 
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_learning_analysis_dashboard"><%= t("manual.manual_session_page_learning_analysis_dashboard1") %></h2></a>
-        <p><%= t("manual.manual_session_page_learning_analysis_dashboard2") %></p>
-        <p>
-            <%= t("manual.manual_session_page_learning_analysis_dashboard3") %><br>
-            <%= t("manual.manual_session_page_learning_analysis_dashboard4") %><br>
-            <%= t("manual.manual_session_page_learning_analysis_dashboard5") %>
-        </p>
-        <img src="/img/manual_session_page_learning_analysis_dashboard.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="manual_session_page_end_session"><%= t("manual.manual_session_page_end_session1") %></h2></a>
-        <p><%= t("manual.manual_session_page_end_session2") %></p>
-        <img src="/img/mamanual_session_page_learningnual_session_page_end_session1.png">
-        <p><%= t("manual.manual_session_page_end_session3") %></p>
-        <img src="/img/manual_session_page_end_session2.png">
-    </div>
-
-    <div class="delimiter_line"></div>
-
-    <div class="center">
-        <a href="#list"><h2 id="q&a"><%= t("manual.q&a1") %></h2></a>
-        <p><%= t("manual.q&a2") %></p>
-        <p><%= t("manual.q&a3") %></p>
-    </div>
+<div class="center">
+    <a href="#list"><h2 id="q&a"><%= t("manual.q&a1").html_safe %></h2></a>
+    <p><%= t("manual.q&a2").html_safe %></p>
+    <p><%= t("manual.q&a3").html_safe %></p>
 </div>

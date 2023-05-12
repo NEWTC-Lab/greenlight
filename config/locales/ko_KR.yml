@@ -681,7 +681,7 @@ ko_KR:
     manual_account_registration: 계정 등록
     manual_main_page: 메인화면
     manual_session_page: 세션화면
-    manual_session_page_using_microphone1: 세션화면 – 마이크사용
+    manual_session_page_using_microphone: 세션화면 – 마이크사용
     manual_session_page_using_webcam: 세션화면 – 웹캠사용
     manual_session_page_manager_function: 세션화면 – 관리자의 기능(주관자)
     manual_session_page_annotation_tool: 세션화면 – 발표자 – 주석 도구
@@ -693,7 +693,7 @@ ko_KR:
     manual_session_page_presentation_management2: 세션화면 – 프레젠테이션 관리
     manual_session_page_surbey: 세션화면 – 설문조사
     manual_session_page_user_management: 세션화면 – 사용자 관리 메뉴
-    manual_session_page_small group: 세션화면 – 소모임
+    manual_session_page_small_group: 세션화면 – 소모임
     manual_session_page_closed_subtitle: 세션화면 – 폐쇄자막
     manual_session_page_learning_analysis_dashboard: 세션화면 – 학습 분석 현황판
     manual_session_page_end_session: 세션화면 – 세션 종료
@@ -716,6 +716,7 @@ ko_KR:
     manual_session_page5: ④웹캠
     manual_session_page6: ⑤프레젠테이션 숨기기
     manual_session_page7: ⑥손들기
+    manual_session_page_using_microphone1: 세션화면 – 마이크사용
     manual_session_page_using_microphone2: 참여시 듣기만 해서 참여하거나, 마이크를 사용해 참여할 수 있습니다.
     manual_session_page_using_microphone3: 마이크 사용시 권한을 허용해야 합니다.
     manual_session_page_using_microphone4: 연결 설정이 완료된 후, 자신의 목소리가 잘 들리는지 테스트 합니다.
@@ -816,5 +817,7 @@ ko_KR:
     manual_session_page_end_session2: 미팅 끝은 세션을 종료하는 것이고, 미팅 끝내기는 세션을 종료하지 않고 나가는 것입니다.
     manual_session_page_end_session3: 세션장은 세션종료 후에도 학습분석 현황판을 볼 수 있습니다.
     q&a1: 문의 및 오류 신고
-    q&a2: 만약 궁금하신 부분이나 오류가 발생하셨다면, 아래의 이메일 또는  온누리교회 동작공동체 사랑1순 류대우 형제님께 문의 부탁 드립니다.
-    q&a3: davidryu@newtc.co.kr
+    q&a2: 만약 궁금하신 부분이나 오류가 발생하셨다면, 아래의 이메일로 문의 부탁 드립니다.
+    q&a3: newtc@newtc.co.kr
+
+
